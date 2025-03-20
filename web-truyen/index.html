@@ -5,35 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danh Sách Truyện</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Trang web đọc truyện tranh trực tuyến">
+    <meta name="keywords" content="truyện tranh, web truyện, danh sách truyện, đọc truyện online">
+    <meta name="author" content="Web Truyện">
 </head>
 <body>
-
     <!-- Nút menu -->
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Mở menu">☰</button>
 
     <!-- Sidebar -->
-    <div class="sidebar">
+    <nav class="sidebar" aria-label="Sidebar">
         <ul>
-            <li>Truyện Con Gái</li>
-            <li>Truyện Con Trai</li>
-            <li>Thể Loại</li>
-            <li>Tìm Truyện</li>
-            <li>Xếp Hạng</li>
-            <li>Lọc Thể Loại</li>
+            <li><a href="#truyen-con-gai">Truyện Con Gái</a></li>
+            <li><a href="#truyen-con-trai">Truyện Con Trai</a></li>
+            <li><a href="#the-loai">Thể Loại</a></li>
+            <li><a href="#tim-truyen">Tìm Truyện</a></li>
+            <li><a href="#xep-hang">Xếp Hạng</a></li>
+            <li><a href="#loc-the-loai">Lọc Thể Loại</a></li>
         </ul>
-    </div>
+    </nav>
 
     <!-- Nội dung chính -->
-    <div class="container">
+    <main class="container">
         <h1>Danh Sách Truyện</h1>
         <p>Đây là nơi hiển thị truyện...</p>
-    </div>
+    </main>
 
     <script>
         function toggleMenu() {
             document.querySelector(".sidebar").classList.toggle("active");
         }
     </script>
-
 </body>
 </html>
