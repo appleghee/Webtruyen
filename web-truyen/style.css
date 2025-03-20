@@ -1,0 +1,73 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Toàn bộ trang */
+html {
+    scroll-behavior: smooth; /* Cuộn mượt mà */
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 60px;
+}
+
+/* Thanh menu 3 gạch */
+.menu-toggle {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Sidebar ẩn */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Ẩn sidebar ban đầu */
+    width: 250px;
+    height: 100%;
+    background-color: #222;
+    color: white;
+    padding-top: 50px;
+    transition: left 0.3s ease;
+}
+
+/* Sidebar hiển thị */
+.sidebar.active {
+    left: 0;
+}
+
+/* Danh sách trong menu */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+}
+
+.sidebar ul li:hover {
+    background-color: #333;
+}
+
+/* Nội dung chính */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
